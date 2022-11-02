@@ -1,0 +1,36 @@
+.navbar-container {
+  position: relative;
+  background: #d2d2d2;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+}
+
+.logo span {
+  display: block;
+}
+.logo span:nth-child(2) {
+  align-self: flex-end;
+  color: red;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.links li.active {
+  color: red;
+}
+
+.mode-toggle svg {
+  width: 30px;
+  height: 30px;
+}
