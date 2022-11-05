@@ -2,17 +2,16 @@ import React from "react";
 
 import { NavBar } from "../NavBar/NavBar";
 import { Socials } from "../Socials/Socials";
-import { Email } from "../Socials/Email";
 import { HeroSection } from "./HeroSection";
+import { MobileOverlay } from "../NavBar/MobileOverlay";
 
 export const LandingPage = () => {
   return (
-    <div>
+    <>
       <NavBar />
-      {/* <HeroSection />
-
+      <MobileOverlay />
+      <HeroSection />
       <Socials />
-      <Email /> */}
-    </div>
+    </>
   );
 };

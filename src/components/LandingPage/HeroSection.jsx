@@ -1,10 +1,19 @@
 import React from "react";
+import "./HeroSection.css";
 
 export const HeroSection = () => {
   return (
     <div className="hero-section">
-      <h2>Cultivating bonds between products and users.</h2>
-      <p>Software Engineer | UI / UX Designer</p>
+      <h2>
+        <span>Cultivating bonds</span>
+        <span>between</span>
+        <span>
+          <span className="products">products</span>
+          and
+          <span className="users">users</span>.
+        </span>
+      </h2>
+      <p>Software Engineer | UI/UX Designer</p>
       <button>Projects</button>
     </div>
   );

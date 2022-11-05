@@ -1,0 +1,75 @@
+/* SOCIAL CONTAINER STYLES */
+.social-container {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  color: #ec8525;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-container,
+.email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.email-container {
+  position: relative;
+  right: -100px;
+}
+
+/* SOCIAL ICONS AND EMAIL */
+.icon {
+  display: inline-block;
+  fill: #303030;
+  width: 30px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  fill: #ec8525;
+}
+
+.icon:nth-child(1) {
+  width: 25px;
+}
+
+.icon:nth-child(1)::after {
+  content: "";
+  display: block;
+  background-color: #ec8525;
+  height: 30px;
+  width: 30px;
+}
+
+.email-text {
+  position: relative;
+  bottom: 30px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.email-text:hover {
+  color: #303030;
+}
+
+/* LINE */
+.social-line {
+  width: 1px;
+  height: 100px;
+  background: #303030;
+  align-self: center;
+}
+
+/* MOBILE MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+  .social-line {
+    height: 40px;
+  }
+}

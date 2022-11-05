@@ -1,44 +1,42 @@
 import React from "react";
 import "./navbar.css";
 
-export const NavBar = () => {
+export const MobileOverlay = () => {
+  const [toggle, setToggle] = React.useState(true);
+
   return (
-    <div className="navbar-container">
-      <div className="nav-left">
+    <div className="mobile-overlay">
+      <header>
         <div className="logo">
           <span>Andrew</span>
           <span>Dobson</span>
         </div>
-      </div>
-      <div
-        className="mobile-nav-right"
-        onPointerDown={() => {
-          // const [overlay] = document.getElementsByClassName("mobile-overlay");
-          // overlay.style.display = "flex";
-          // gsap.from(".mobile-overlay", {
-          //   x: window.innerWidth,
-          //   duration: 0.5,
-          // });
-          // console.log("here");
-        }}
-      >
-        <svg mlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path d="M0 64H448v64H0V64zM0 224H448v64H0V224zM448 384v64H0V384H448z" />
-        </svg>
-      </div>
-      <div className="nav-right">
-        <div className="links">
-          <span className="active">Home.</span>
-          <span>Projects.</span>
-          <span>About.</span>
-          <span>Contact.</span>
-        </div>
-        <div className="toggle-mode">
+
+        <div className="mobile-icons">
+          {/* MOBILE DISPLAY TOGGLE */}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path d="M256 144C194.1 144 144 194.1 144 256c0 61.86 50.14 112 112 112s112-50.14 112-112C368 194.1 317.9 144 256 144zM256 320c-35.29 0-64-28.71-64-64c0-35.29 28.71-64 64-64s64 28.71 64 64C320 291.3 291.3 320 256 320zM256 112c13.25 0 24-10.75 24-24v-64C280 10.75 269.3 0 256 0S232 10.75 232 24v64C232 101.3 242.8 112 256 112zM256 400c-13.25 0-24 10.75-24 24v64C232 501.3 242.8 512 256 512s24-10.75 24-24v-64C280 410.8 269.3 400 256 400zM488 232h-64c-13.25 0-24 10.75-24 24s10.75 24 24 24h64C501.3 280 512 269.3 512 256S501.3 232 488 232zM112 256c0-13.25-10.75-24-24-24h-64C10.75 232 0 242.8 0 256s10.75 24 24 24h64C101.3 280 112 269.3 112 256zM391.8 357.8c-9.344-9.375-24.56-9.372-33.94 .0031s-9.375 24.56 0 33.93l45.25 45.28c4.672 4.688 10.83 7.031 16.97 7.031s12.28-2.344 16.97-7.031c9.375-9.375 9.375-24.56 0-33.94L391.8 357.8zM120.2 154.2c4.672 4.688 10.83 7.031 16.97 7.031S149.5 158.9 154.2 154.2c9.375-9.375 9.375-24.56 0-33.93L108.9 74.97c-9.344-9.375-24.56-9.375-33.94 0s-9.375 24.56 0 33.94L120.2 154.2zM374.8 161.2c6.141 0 12.3-2.344 16.97-7.031l45.25-45.28c9.375-9.375 9.375-24.56 0-33.94s-24.59-9.375-33.94 0l-45.25 45.28c-9.375 9.375-9.375 24.56 0 33.93C362.5 158.9 368.7 161.2 374.8 161.2zM120.2 357.8l-45.25 45.28c-9.375 9.375-9.375 24.56 0 33.94c4.688 4.688 10.83 7.031 16.97 7.031s12.3-2.344 16.97-7.031l45.25-45.28c9.375-9.375 9.375-24.56 0-33.93S129.6 348.4 120.2 357.8z" />
           </svg>
+
+          {/* MOBILE MENU BARS */}
+          <svg
+            onPointerDown={() => {
+              console.log("clicked on something");
+            }}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path d="M143 175C152.4 165.7 167.6 165.7 176.1 175L223.1 222.1L271 175C280.4 165.7 295.6 165.7 304.1 175C314.3 184.4 314.3 199.6 304.1 208.1L257.9 255.1L304.1 303C314.3 312.4 314.3 327.6 304.1 336.1C295.6 346.3 280.4 346.3 271 336.1L223.1 289.9L176.1 336.1C167.6 346.3 152.4 346.3 143 336.1C133.7 327.6 133.7 312.4 143 303L190.1 255.1L143 208.1C133.7 199.6 133.7 184.4 143 175V175zM0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V96C400 87.16 392.8 80 384 80H64C55.16 80 48 87.16 48 96z" />
+          </svg>
         </div>
-      </div>
+      </header>
+
+      <nav>
+        <a href="#">Home.</a>
+        <a href="#">Projects.</a>
+        <a href="#">About.</a>
+        <a href="#">Contact.</a>
+      </nav>
     </div>
   );
 };
