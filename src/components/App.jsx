@@ -1,12 +1,18 @@
 import React from "react";
 
 //COMPONENTS
-import { LandingPage } from "./LandingPage/LandingPage";
+import { NavBar } from "./NavBar/NavBar";
+import { Socials } from "./Socials/Socials";
+import { LandingPage } from "./pages/Landing/LandingPage";
+import { ProjectsPage } from "./pages/Projects/ProjectsPage";
 
 const App = () => {
   return (
     <div className="app">
-      <LandingPage />
+      <NavBar />
+      <Socials />
+      {/* <LandingPage /> */}
+      {/* <ProjectsPage /> */}
     </div>
   );
 };

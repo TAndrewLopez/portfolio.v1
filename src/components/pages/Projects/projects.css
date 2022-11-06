@@ -1,0 +1,36 @@
+.projects-section {
+}
+
+.projects-section h1 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 96px;
+  text-align: center;
+}
+
+.projects-container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.col {
+}
+
+.left.col {
+  width: 650px;
+  height: 400px;
+  flex: 2;
+  background: rgba(173, 216, 230, 0.5);
+}
+.right.col {
+  width: 300px;
+  height: 400px;
+  flex: 1.5;
+  background: rgba(240, 128, 128, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+  .projects-section h1 {
+    font-size: 48px;
+  }
+}

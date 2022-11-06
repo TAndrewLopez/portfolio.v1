@@ -1,0 +1,35 @@
+{
+  "projects": [
+    {
+      "name": "Grace Shopper Records",
+      "source": "https://github.com/rugrats2208/graceShopper",
+      "liveSite": "https://rugrats-grace-shopper.herokuapp.com/",
+      "description": "Grace Shopper Records is an E-Commerce website built using the Spotify API to represent vinyl records to be sold. Both user and administrator experiences are built in.",
+      "tech": [
+        "React",
+        "Redux",
+        "Javascript",
+        "Sequelize",
+        "PostgresQL",
+        "Express",
+        "Node.js",
+        "Heroku"
+      ]
+    },
+    {
+      "name": "Linkuistix",
+      "source": "https://github.com/DrTeethCapstone/Linkuistix",
+      "liveSite": "https://linkuistix.com/game",
+      "description": "A word association game built upon a pre-trained AI model, Linkuistix is a battle against the clock that challenges players to find related words as quickly as they can.",
+      "tech": [
+        "Pixi.js",
+        "Tensorflow.js",
+        "Javascript",
+        "React",
+        "Node.js",
+        "Firebase",
+        "Firestore"
+      ]
+    }
+  ]
+}

@@ -10,5 +10,10 @@ html {
   overflow: hidden;
 }
 
+.app {
+  /* background: lightcoral; */
+  height: 100vh;
+}
+
 @media screen and (max-width: 900px) {
 }

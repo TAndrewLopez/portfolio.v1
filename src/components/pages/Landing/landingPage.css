@@ -4,11 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 85%;
+  /* background: lightgreen; */
 }
 
 .hero-section h2 {
-  font-size: 40px;
+  font-size: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +17,7 @@
 
 .hero-section p {
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .hero-section button {
@@ -30,6 +31,7 @@
   border: 2px solid #ec8525;
   cursor: pointer;
 }
+
 .hero-section button:hover {
   font-weight: bold;
   color: #676767;
@@ -46,4 +48,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .hero-section h2 {
+    font-size: 40px;
+  }
+  .hero-section p {
+    font-size: 16px;
+  }
 }
