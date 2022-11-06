@@ -5,7 +5,7 @@
   alt="https://thefutureshapers.com/wp-content/uploads/2018/08/Do-something-great.jpg" 
   src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/689161/1211-Language_Services_in_Text_Editors_Newsletter-18b1ac8f0e017a8e065227e88cbfd664.png" 
   width=400/><br/>
-  <a href="#">🔗 Live Site</a>
+  <a href="https://tandrewlopez-dev.netlify.app">🔗 Live Site</a>
 </h1>
 
 <!-- BADGES -->
