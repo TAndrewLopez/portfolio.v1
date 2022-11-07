@@ -15,23 +15,29 @@ export const ContactPage = () => {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     const userName = userNameRef.current.value;
     const userEmail = userEmailRef.current.value;
     const userMessage = userMessageRef.current.value;
     const state = { name: userName, email: userEmail, message: userMessage };
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact-me",
-        ...state,
-      }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-    e.preventDefault();
-    console.log("success");
+    if (userName && userEmail && userMessage) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "contact-me",
+          ...state,
+        }),
+      })
+        .then(() => {
+          userNameRef.current.value = "";
+          userEmailRef.current.value = "";
+          userMessageRef.current.value = "";
+          alert("Success!");
+        })
+        .catch((error) => alert(error));
+    }
   };
 
   return (
@@ -48,8 +54,8 @@ export const ContactPage = () => {
         <textarea
           id="message"
           name="message"
-          cols="30"
-          rows="10"
+          // cols="30"
+          rows="5"
           ref={userMessageRef}
         ></textarea>
         <button type="submit">Submit</button>
