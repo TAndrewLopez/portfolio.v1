@@ -18,15 +18,14 @@ export const ContactPage = () => {
     const userName = userNameRef.current.value;
     const userEmail = userEmailRef.current.value;
     const userMessage = userMessageRef.current.value;
+    const state = { userName, userEmail, userMessage };
 
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "contact-me",
-        userName,
-        userEmail,
-        userMessage,
+        ...state,
       }),
     })
       .then(() => alert("Success!"))
