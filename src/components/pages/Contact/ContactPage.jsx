@@ -24,7 +24,7 @@ export const ContactPage = () => {
   return (
     <div className="contactPage">
       <h1>Contact Me</h1>
-      <form name="contact-me" method="post">
+      <form onSubmit={handleSubmit} name="contact-me" method="post">
         <input type="hidden" name="form-name" value="contact-me" />
 
         <label htmlFor="full-name">Full Name:</label>
