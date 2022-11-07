@@ -18,7 +18,7 @@ export const ContactPage = () => {
     const userName = userNameRef.current.value;
     const userEmail = userEmailRef.current.value;
     const userMessage = userMessageRef.current.value;
-    const state = { userName, userEmail, userMessage };
+    const state = { name: userName, email: userEmail, message: userMessage };
 
     fetch("/", {
       method: "POST",
