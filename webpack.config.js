@@ -11,7 +11,7 @@ module.exports = {
     filename: "bundle.js",
   },
   context: __dirname,
-  devtool: "source-map",
+  devtool: "eval-source-map",
   target: "web",
   devServer: {
     port: "7000",

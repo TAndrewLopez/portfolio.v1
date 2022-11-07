@@ -8,6 +8,7 @@
   color: #ec8525;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .icons-container,
