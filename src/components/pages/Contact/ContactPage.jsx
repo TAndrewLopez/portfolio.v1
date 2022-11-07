@@ -15,10 +15,9 @@ export const ContactPage = () => {
   };
 
   const handleSubmit = (e) => {
-    console.log("submitting form", { userName, userEmail, userMessage });
-    const userName = userName.current.value;
-    const userEmail = userEmail.current.value;
-    const userMessage = userMessage.current.value;
+    const userName = userNameRef.current.value;
+    const userEmail = userEmailRef.current.value;
+    const userMessage = userMessageRef.current.value;
 
     fetch("/contact", {
       method: "POST",
