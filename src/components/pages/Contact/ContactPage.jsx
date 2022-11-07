@@ -7,7 +7,7 @@ export const ContactPage = () => {
       <h1>Contact Me</h1>
       <form
         name="contact v1"
-        onSubmit={submit}
+        // onSubmit={"submit"}
         method="POST"
         data-netlify={true}
         netlify-honeypot="bot-field"
