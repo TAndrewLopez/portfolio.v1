@@ -1,8 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+
 //COMPONENTS
-import { NavBar } from "./NavBar/NavBar";
-import { Socials } from "./Socials/Socials";
+import { NavBar } from "./navBar/NavBar";
+import { Socials } from "./socials/Socials";
 
 import { HeroSection } from "./pages/Landing/HeroSection";
 import { AboutPage } from "./pages/About/AboutPage";
@@ -20,7 +21,6 @@ const App = () => {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
-      {/* <ProjectsPage /> */}
     </div>
   );
 };

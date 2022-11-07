@@ -1,0 +1,110 @@
+.contactPage {
+  /* background: red; */
+  font-family: "Amaranth", sans-serif;
+}
+.contactPage h1 {
+  color: #303030;
+  font-size: 96px;
+  text-align: center;
+}
+.contactPage form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactPage form label {
+  color: #303030;
+  font-size: 20px;
+}
+.contactPage form input {
+  height: 50px;
+}
+
+.contactPage form textarea {
+  resize: none;
+}
+.contactPage form input,
+.contactPage form textarea {
+  padding: 8px;
+  color: #fff;
+  font-size: 20px;
+  background: #303030;
+  border-radius: 0.5rem;
+}
+
+.contactPage button {
+  font-family: "Inconsolata", monospace;
+  background: #303030;
+  color: #d2d2d2;
+  margin: 30px 0;
+  font-size: 22px;
+  padding: 13px 60px;
+  border-radius: 1rem;
+  border: 2px solid #ec8525;
+  cursor: pointer;
+  align-self: center;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer::before {
+  /* content: ""; */
+  /* position: absolute; */
+  /* display: block; */
+  /* left: 50; */
+  /* z-index: -10; */
+  /* background: pink; */
+  /* width: 300px; */
+  /* height: 300px; */
+  /* transform: rotate(45deg); */
+}
+
+footer p {
+  color: #ec8525;
+}
+
+.decoration {
+  margin: 15px;
+  background: white;
+  height: 15px;
+  width: 200px;
+  display: flex;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.color1,
+.color2,
+.color3,
+.color4 {
+  flex: 1;
+}
+
+.color1 {
+  background: #303030;
+}
+
+.color2 {
+  background: #ec8525;
+}
+
+.color3 {
+  background: #d9d9d9;
+}
+
+@media screen and (max-width: 900px) {
+  .contactPage h1 {
+    font-size: 48px;
+  }
+}
