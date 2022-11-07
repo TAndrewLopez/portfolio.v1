@@ -13,7 +13,9 @@ export const ContactPage = () => {
       )
       .join("&");
   };
+
   const handleSubmit = (e) => {
+    console.log("submitting form", { userName, userEmail, userMessage });
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -24,7 +26,7 @@ export const ContactPage = () => {
   return (
     <div className="contactPage">
       <h1>Contact Me</h1>
-      <form name="contact-me" method="post">
+      <form onSubmit={handleSubmit} name="contact-me" method="post">
         <input type="hidden" name="form-name" value="contact-me" />
 
         <label htmlFor="full-name">Full Name:</label>
