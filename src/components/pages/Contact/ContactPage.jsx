@@ -2,17 +2,12 @@ import React from "react";
 import "./contact.css";
 
 export const ContactPage = () => {
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    console.dir(evt.target);
-  };
-
   return (
     <div className="contactPage">
       <h1>Contact Me</h1>
       <form
         name="contact v1"
-        onSubmit={handleSubmit}
+        onSubmit={submit}
         method="POST"
         data-netlify={true}
         netlify-honeypot="bot-field"
@@ -25,7 +20,7 @@ export const ContactPage = () => {
         <input id="email" type="email" name="email" />
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" cols="30" rows="10"></textarea>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
 
       <footer>
