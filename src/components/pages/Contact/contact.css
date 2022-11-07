@@ -1,5 +1,6 @@
 .contactPage {
   /* background: red; */
+  /* display: flex; */
   font-family: "Amaranth", sans-serif;
 }
 .contactPage h1 {
@@ -18,12 +19,13 @@
   font-size: 20px;
 }
 .contactPage form input {
-  height: 50px;
+  /* height: 50px; */
 }
 
 .contactPage form textarea {
   resize: none;
 }
+
 .contactPage form input,
 .contactPage form textarea {
   padding: 8px;
