@@ -38,6 +38,11 @@
   background: #ec8525;
 }
 
+.hero-section button a {
+  color: #303030;
+  text-decoration: none;
+}
+
 .products {
   margin-right: 10px;
   color: #676767;

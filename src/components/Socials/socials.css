@@ -27,17 +27,13 @@
 .icon {
   display: inline-block;
   fill: #303030;
-  width: 30px;
+  width: 50px;
   margin-bottom: 25px;
   cursor: pointer;
 }
 
 .icon:hover {
   fill: #ec8525;
-}
-
-.icon:nth-child(1) {
-  width: 25px;
 }
 
 .icon:nth-child(1)::after {
@@ -50,7 +46,6 @@
 
 .email-text {
   position: relative;
-  bottom: 30px;
   transform: rotate(90deg);
   cursor: pointer;
 }
@@ -69,11 +64,21 @@
 
 /* MOBILE MEDIA QUERIES */
 @media screen and (max-width: 900px) {
-  .social-line {
-    height: 40px;
+  .email-text {
+    bottom: 30px;
   }
+
   .icons-container,
   .email-container {
     margin: 0 10px;
+  }
+  .icon {
+    width: 30px;
+  }
+  .icon:nth-child(1) {
+    width: 25px;
+  }
+  .social-line {
+    height: 40px;
   }
 }
