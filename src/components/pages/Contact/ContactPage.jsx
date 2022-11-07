@@ -2,9 +2,9 @@ import React from "react";
 import "./contact.css";
 
 export const ContactPage = () => {
-  const userName = React.useRef();
-  const userEmail = React.useRef();
-  const userMessage = React.useRef();
+  const userNameRef = React.useRef();
+  const userEmailRef = React.useRef();
+  const userMessageRef = React.useRef();
 
   const encode = (data) => {
     return Object.keys(data)
@@ -16,14 +16,24 @@ export const ContactPage = () => {
 
   const handleSubmit = (e) => {
     console.log("submitting form", { userName, userEmail, userMessage });
+    const userName = userName.current.value;
+    const userEmail = userEmail.current.value;
+    const userMessage = userMessage.current.value;
+
     fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact-me" }),
+      body: encode({
+        "form-name": "contact-me",
+        userName,
+        userEmail,
+        userMessage,
+      }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
     e.preventDefault();
+    console.log("success");
   };
 
   return (
@@ -33,16 +43,16 @@ export const ContactPage = () => {
         <input type="hidden" name="form-name" value="contact-me" />
 
         <label htmlFor="full-name">Full Name:</label>
-        <input id="full-name" type="text" name="full-name" ref={userName} />
+        <input id="full-name" type="text" name="full-name" ref={userNameRef} />
         <label htmlFor="email">Email:</label>
-        <input id="email" type="email" name="email" ref={userEmail} />
+        <input id="email" type="email" name="email" ref={userEmailRef} />
         <label htmlFor="message">Message:</label>
         <textarea
           id="message"
           name="message"
           cols="30"
           rows="10"
-          ref={userMessage}
+          ref={userMessageRef}
         ></textarea>
         <button type="submit">Submit</button>
       </form>
