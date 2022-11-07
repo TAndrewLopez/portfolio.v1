@@ -21,6 +21,7 @@ export const ContactPage = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact-me" }),
     });
+    e.preventDefault();
   };
 
   return (
