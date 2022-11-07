@@ -1,5 +1,4 @@
 <!-- HEADER -->
-<!-- https://i.imgur.com/ncCnsz4.png -->
 <h1 align="center">
   <img 
   alt="https://thefutureshapers.com/wp-content/uploads/2018/08/Do-something-great.jpg" 
@@ -10,7 +9,7 @@
 
 <!-- BADGES -->
 <p align="center">
-<a href="">
+<a href="#">
 <img src="https://img.shields.io/badge/Version-1.0-00ADD8?style=for-the-badge" alt="portfolio version" />
 </a>
 </p>
