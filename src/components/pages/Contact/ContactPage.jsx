@@ -13,7 +13,9 @@ export const ContactPage = () => {
       )
       .join("&");
   };
+
   const handleSubmit = (e) => {
+    console.log("submitting form", { userName, userEmail, userMessage });
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
