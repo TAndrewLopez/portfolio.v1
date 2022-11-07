@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export const NavBar = () => {
@@ -6,16 +7,18 @@ export const NavBar = () => {
     <div className="navbar-container">
       <div className="nav-left">
         <div className="logo">
-          <span>Andrew</span>
-          <span>Dobson</span>
+          <Link to={"/"}>
+            <span>Andrew</span>
+            <span>Dobson</span>
+          </Link>
         </div>
       </div>
       <div className="nav-right">
         <div className="links">
-          <span className="active">Home.</span>
-          <span>Projects.</span>
-          <span>About.</span>
-          <span>Contact.</span>
+          <Link to={"/"}>Home.</Link>
+          <Link to={"/projects"}>Projects.</Link>
+          <Link to={"/about"}>About.</Link>
+          <Link to={"/contact"}>Contact.</Link>
         </div>
         <div className="toggle-mode">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

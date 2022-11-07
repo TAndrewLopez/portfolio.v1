@@ -1,5 +1,6 @@
 import React from "react";
-import "./landingPage.css";
+import "./heroSection.css";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
@@ -14,7 +15,9 @@ export const HeroSection = () => {
         </span>
       </h2>
       <p>Software Engineer | UI/UX Designer</p>
-      <button>Projects</button>
+      <button>
+        <Link to={"/projects"}>Projects</Link>
+      </button>
     </div>
   );
 };

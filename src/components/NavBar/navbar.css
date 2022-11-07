@@ -21,7 +21,11 @@
 .logo {
   width: 90px;
   height: 50px;
-  cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #303030;
 }
 
 .logo span:nth-child(2) {
@@ -37,12 +41,13 @@
   list-style: none;
   margin-right: 55px;
 }
-
-.links span {
+.links a {
+  color: #303030;
+  text-decoration: none;
   margin: 15px;
 }
 
-.links span.active::after {
+.links a.active::after {
   content: "";
   display: block;
   height: 5px;
