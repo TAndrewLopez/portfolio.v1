@@ -16,11 +16,13 @@ export const ContactPage = () => {
 
   const handleSubmit = (e) => {
     console.log("submitting form", { userName, userEmail, userMessage });
-    fetch("/", {
+    fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact-me" }),
-    });
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
     e.preventDefault();
   };
 
