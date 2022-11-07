@@ -19,7 +19,7 @@ export const ContactPage = () => {
     const userEmail = userEmailRef.current.value;
     const userMessage = userMessageRef.current.value;
 
-    fetch("/contact", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
